@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- About Section -->
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>
+                    Welcome to <strong>Taste of the Worlds</strong>! We're passionate food lovers who wanted to share an amazing collection of recipes from around the globe. Our mission is simple: make cooking fun, easy, and exciting for everyone. Whether you've been cooking for years or you're just getting started, we've got something for you.
+                </p>
+                <p>
+                    We built this site because we love exploring different cuisines and wanted to make that easier for everyone else too. Food isn't just about eating. It's about discovering new cultures, sharing experiences, and bringing people together. Every recipe has a story behind it, and we want to help you find those stories.
+                </p>
+
+                <h2>Our Story</h2>
+                <p>
+                    This whole project started because we both love cooking and trying food from different places. We figured there should be an easy way to find recipes from anywhere in the world, so we decided to build it ourselves. Whether you're in the mood for Italian pasta, Japanese sushi, Indian curry, or pretty much anything else, we've tried to make it easy to find.
+                </p>
+
+                <h2>Meet the Team</h2>
+                
+                <div style="margin: 30px 0;">
+                    <div style="margin-bottom: 30px; padding: 20px; background-color: rgba(255, 255, 255, 0.5); border-radius: 8px; border-left: 4px solid #CD853F;">
+                        <h3 style="color: #8B4513; margin-top: 0;">Ismail Shaikh</h3>
+                        <p style="margin-bottom: 10px;">
+                            One of the creators of Taste of the Worlds. I love cooking and wanted to make it easier for people to explore recipes from all over the world.
+                        </p>
+                        <p style="margin: 5px 0;">
+                            <strong>Email:</strong> <a href="mailto:ismailsshaikh03@gmail.com">ismailsshaikh03@gmail.com</a>
+                        </p>
+                        <p style="margin: 5px 0;">
+                            <strong>Phone:</strong> <a href="tel:2018003345">(201) 800-3345</a>
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 30px; padding: 20px; background-color: rgba(255, 255, 255, 0.5); border-radius: 8px; border-left: 4px solid #CD853F;">
+                        <h3 style="color: #8B4513; margin-top: 0;">Shahriar Topu</h3>
+                        <p style="margin-bottom: 10px;">
+                            The other half of the team behind Taste of the Worlds. I'm all about making cooking accessible and fun for everyone, no matter your experience level.
+                        </p>
+                        <p style="margin: 5px 0;">
+                            <strong>Email:</strong> <a href="mailto:Shahriar.careers@gmail.com">Shahriar.careers@gmail.com</a>
+                        </p>
+                        <p style="margin: 5px 0;">
+                            <strong>Phone:</strong> <a href="tel:8623879434">(862) 387-9434</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h2>What We Offer</h2>
+                <p>
+                    We've put together a huge collection of recipes from all over the world. Here's what you can do:
+                </p>
+                <ul style="line-height: 2; color: #5D4037;">
+                    <li>Search for recipes by category, where they're from, or what ingredients you have</li>
+                    <li>Discover new types of food and learn different cooking methods</li>
+                    <li>Get step-by-step instructions and helpful tips</li>
+                    <li>Watch videos to see exactly how it's done</li>
+                    <li>Explore amazing dishes from different cultures</li>
+                </ul>
+
+                <h2>Get in Touch</h2>
+                <p>
+                    We'd love to hear from you! Got questions, suggestions, or just want to share what you've been cooking? Feel free to reach out to either of us. We're always excited to talk about food with fellow cooking enthusiasts.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Taste of the Worlds. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fetch and inject navbar
+        fetch('nav.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Failed to load navbar');
+                return response.text();
+            })
+            .then(data => document.getElementById('navbar-container').innerHTML = data)
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>

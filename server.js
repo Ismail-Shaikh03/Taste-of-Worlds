@@ -50,6 +50,16 @@ app.get('/recipes', (req, res) => {
   });
 });
 
+// Serve the about.html page
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'about.html'), (err) => {
+    if (err) {
+      console.error('Error serving about.html:', err);
+      res.status(500).json({ error: 'Error loading about page' });
+    }
+  });
+});
+
 // API route to get meals data with filtering and search
 app.get('/api/meals', async (req, res) => {
   let { category, area, search } = req.query;
